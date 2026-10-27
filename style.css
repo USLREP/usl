@@ -226,14 +226,6 @@ th, td { text-align: left; padding: 0.6rem 1rem; border-bottom: 1px solid var(--
 th { font-family: var(--font-display); font-size: 0.76rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; background: var(--bg); }
 td.yr { font-family: var(--font-display); font-size: 0.88rem; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 
-/* ---- director ---- */
-.profile { display: grid; grid-template-columns: minmax(0, 1fr) 18rem; gap: 2rem 3rem; align-items: start; }
-.contact { background: var(--surface); border: 1px solid var(--rule); padding: 1.25rem 1.4rem; font-family: var(--font-display); font-size: 0.92rem; }
-.contact dt { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
-.contact dd { margin: 0.1rem 0 0.9rem; }
-.contact dd:last-child { margin-bottom: 0; }
-@media (max-width: 48rem) { .profile { grid-template-columns: 1fr; } }
-
 /* ---- sponsors ---- */
 .sponsors { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0; padding: 0; list-style: none; }
 .sponsors li {
