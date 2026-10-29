@@ -214,6 +214,14 @@ ul.plain { list-style: none; margin: 0; padding: 0; }
 
 .pub { padding-block: 0.55rem; border-top: 1px solid var(--rule); font-size: 0.98rem; min-width: 0; }
 .pub .venue { font-style: italic; }
+.pub.hl { background: color-mix(in srgb, var(--accent) 7%, var(--surface)); border-left: 3px solid var(--accent); padding-inline: 0.9rem; }
+.award {
+  display: inline-block; margin-left: 0.35rem; vertical-align: 0.1em;
+  font-family: var(--font-display); font-size: 0.74rem; font-weight: 600; letter-spacing: 0.02em;
+  color: #FFFFFF; background: var(--accent); border-radius: 2px; padding: 0.1rem 0.5rem; white-space: nowrap;
+}
+:root[data-theme="dark"] .award { color: #0D1117; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .award { color: #0D1117; } }
 
 .people { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(14rem, 40%), 1fr)); gap: 0.75rem; }
 .person { min-width: 0; background: var(--surface); border: 1px solid var(--rule); padding: 0.9rem 1rem; }
